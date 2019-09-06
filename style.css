@@ -302,6 +302,19 @@ header {
     
     
 }
+
+.backtogithub a {
+    text-decoration: none;
+    color: rgb(17, 84, 122);
+    
+}
+.backtogithub a:hover {
+    color: black;
+    border-bottom: 1px solid black;
+    
+}
+
+
 /* .div2 {
     background-repeat: no-repeat;
     background-attachment: fixed;
