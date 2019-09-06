@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Iceland; 
+    font-family: Iceland;
+    
 }
 
 html {
@@ -14,7 +15,7 @@ html {
     background-size: cover;
 }
 
-body {
+#body {
     background-image: url("img/snow.gif");
     background-attachment: fixed;
     background-position: center;
@@ -32,6 +33,41 @@ header {
 .logo {
     width: 20%;
     align-self: center;
+    position: relative;
+}
+
+.logo h1 {
+    display: inline-block;
+}
+
+.logo h1:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    border-radius: 1px;
+    background-color: rgb(7, 14, 44);
+    text-align: center;
+    color: rgb(28, 149, 219);
+    position: absolute;
+    left: calc(50% - 80px);
+    border: 2px solid rgb(28, 149, 219);
+    min-width: 160px;
+    padding: 0;
+    font-size: 15px;
+    z-index: 1;
+}
+
+.dropdown-content p {
+    padding: 5px;
+    border: 1px solid rgb(28, 149, 219);
+    transition: all 0.4s ease-in-out;
+}
+
+.dropdown-content p:hover {
+    background-color: rgb(43, 56, 116);
+    color: white;
 }
 
 .logo h1 a {
@@ -84,7 +120,9 @@ header {
     grid-row-gap: 20px;
     position: relative;
 }
+
 /* PROFILE */
+
 .profile {
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -95,15 +133,10 @@ header {
     align-items: center;
     padding: 5px;
     position: relative;
-
-    
-    
-  
+    overflow: hidden;
 }
 
 .profile h1 {
-     
-
     margin: 10px;
     text-align: center;
     letter-spacing: 2px;
@@ -113,13 +146,10 @@ header {
 }
 
 .profilecard {
-    overflow: hidden;
     margin: auto;
     transition: 0.3s ease-in-out;
-    
-    
-    /* max-width: 630px; */
 }
+
 .profilecard p {
     font-size: 25px;
     text-align: center;
@@ -138,17 +168,14 @@ header {
 
 .profilecard img {
     width: 100%;
-    
-    
     height: auto;
     border-radius: 5px;
     opacity: 0.7;
     position: absolute;
-    top: 0;
     left: 0;
-    right: 0;
     bottom: 0;
-    margin-top: 100px;
+    min-width: 500px;
+    filter: blur(0px);
 }
 
 .profilebackground {
@@ -163,7 +190,10 @@ header {
     z-index: -1;
 }
 
+
+
 /* DIV 1 */
+
 .div1 {
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -175,11 +205,7 @@ header {
     padding: 5px;
     position: relative;
     padding-bottom: 10px;
-
-    
 }
-
-
 
 .div1background {
     grid-area: 2/2;
@@ -187,11 +213,10 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    
     background: radial-gradient(rgb(67, 69, 85), rgb(7, 14, 44));
     filter: blur(5px);
     opacity: 0.95;
-    z-index: -1;
+    z-index: 0;
 }
 
 .div1 h1 {
@@ -212,7 +237,8 @@ header {
 .card img {
     width: 100%;
     height: auto;
-    border: 1px solid rgb(255, 255, 255);;
+    border: 1px solid rgb(255, 255, 255);
+    ;
     border-radius: 5px;
 }
 
@@ -243,26 +269,30 @@ header {
     text-align: center;
     text-decoration: none;
 }
+
 .github {
     background: radial-gradient(rgb(81, 170, 177), rgb(2, 35, 39));
 }
+
 .live {
     margin: 5px 0 5px 0;
     background: radial-gradient(rgb(68, 189, 64), rgb(2, 35, 39));
 }
+
 .github:hover, .live:hover {
     letter-spacing: 3px;
     box-shadow: 0 0 5px rgb(28, 149, 219);
     border: 1px solid rgb(28, 149, 219);
     color: rgb(4, 27, 41);
 }
+
 .github:hover {
     background-color: rgb(143, 197, 17);
 }
+
 .live:hover {
     background-color: rgb(233, 113, 33);
 }
-
 
 .footerbackground {
     position: absolute;
@@ -277,6 +307,7 @@ header {
     background-size: cover;
     padding-bottom: 450px;
 }
+
 .footer {
     position: absolute;
     bottom: 0;
@@ -287,69 +318,24 @@ header {
     margin-right: 10%;
     display: flex;
     text-align: center;
-    
-   
-    
 }
 
 .footer p {
-
     font-size: 25px;
     /* text-align: center; */
     /* color: rgb(28, 149, 219); */
     color: rgb(17, 84, 122);
     max-width: 500px;
     margin: auto;
-    
-    
 }
 
 .backtogithub a {
     text-decoration: none;
     color: rgb(17, 84, 122);
-    
 }
+
 .backtogithub a:hover {
     color: black;
     border-bottom: 1px solid black;
-    
 }
 
-
-/* .div2 {
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    grid-area: 2/2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5px;
-
-    position: relative;
-
-    
-} */
-
-/* .div2 h1 {
-    font-family: Montserrat;
-    text-align: center;
-    letter-spacing: 2px;
-}
-
-.div3 {
-    background-color: rgb(98, 108, 151);
-    grid-area: 3/2;
-    justify-content: center;
-}
-
-.div3 h1 {
-    font-family: Montserrat;
-    text-align: center;
-    letter-spacing: 2px;
-} */ 
- /* .bottomdiv {
-    grid-area: 4/2 ;
-    height: 100%;
-    border: 1px solid red;
-}  */
