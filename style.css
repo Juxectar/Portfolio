@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Iceland;
+    font-family: Iceland; 
 }
 
 html {
@@ -80,12 +80,12 @@ header {
     height: 100%;
     display: grid;
     grid-template-columns: 10% 1fr 10%;
-    grid-template-rows: 600px 400px 400px;
+    grid-template-rows: 1000px 600px 600px;
     grid-row-gap: 20px;
     position: relative;
 }
-
-.div1 {
+/* PROFILE */
+.profile {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -94,7 +94,85 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 5px;
+    position: relative;
 
+    
+    
+  
+}
+
+.profile h1 {
+     
+
+    margin: 10px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 70px;
+    color: rgb(28, 149, 219);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.514);
+}
+
+.profilecard {
+    overflow: hidden;
+    margin: auto;
+    transition: 0.3s ease-in-out;
+    
+    
+    /* max-width: 630px; */
+}
+.profilecard p {
+    font-size: 20px;
+    text-align: center;
+    color: rgb(28, 149, 219);
+    max-width: 500px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.profilecard img {
+    width: 100%;
+    
+    
+    height: auto;
+    border-radius: 5px;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 100px;
+}
+
+.profilebackground {
+    grid-area: 1/2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(rgb(67, 69, 85), rgb(7, 14, 44));
+    filter: blur(5px);
+    opacity: 0.95;
+    z-index: -1;
+}
+
+/* DIV 1 */
+.div1 {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    grid-area: 2/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
     position: relative;
 
     
@@ -103,7 +181,7 @@ header {
 
 
 .div1background {
-    grid-area: 1/2;
+    grid-area: 2/2;
     top: 0;
     left: 0;
     right: 0;
@@ -126,7 +204,6 @@ header {
 .card {
     overflow: hidden;
     margin: auto;
-    /* border-radius: 10px; */
     transition: 0.3s ease-in-out;
     max-width: 630px;
 }
@@ -165,40 +242,42 @@ header {
     text-align: center;
     text-decoration: none;
 }
-
 .github {
     background: radial-gradient(rgb(81, 170, 177), rgb(2, 35, 39));
 }
-
 .live {
     margin: 5px 0 5px 0;
     background: radial-gradient(rgb(68, 189, 64), rgb(2, 35, 39));
-    /* background-color: rgb(177, 82, 19); */
 }
-
 .github:hover, .live:hover {
     letter-spacing: 3px;
     box-shadow: 0 0 5px rgb(28, 149, 219);
     border: 1px solid rgb(28, 149, 219);
+    color: rgb(4, 27, 41);
 }
-
 .github:hover {
     background-color: rgb(143, 197, 17);
-    color: rgb(4, 27, 41);
 }
-
 .live:hover {
     background-color: rgb(233, 113, 33);
-    color: rgb(4, 27, 41);
 }
 
 /* .div2 {
-    background-color: rgb(98, 108, 151);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     grid-area: 2/2;
-    justify-content: center;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
 
-.div2 h1 {
+    position: relative;
+
+    
+} */
+
+/* .div2 h1 {
     font-family: Montserrat;
     text-align: center;
     letter-spacing: 2px;
@@ -214,10 +293,9 @@ header {
     font-family: Montserrat;
     text-align: center;
     letter-spacing: 2px;
-} */
-
-/* .bottomdiv {
+} */ 
+ /* .bottomdiv {
     grid-area: 4/2 ;
     height: 100%;
     border: 1px solid red;
-} */
+}  */
