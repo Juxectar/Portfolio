@@ -121,7 +121,7 @@ header {
     /* max-width: 630px; */
 }
 .profilecard p {
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
     color: rgb(28, 149, 219);
     max-width: 500px;
@@ -262,6 +262,46 @@ header {
     background-color: rgb(233, 113, 33);
 }
 
+
+.footerbackground {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    margin-left: -5.5%;
+    margin-right: -5.5%;
+    overflow: hidden;
+    background-image: url("img/snowfooter.png");
+    background-size: cover;
+    padding-bottom: 400px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    text-align: center;
+    
+   
+    
+}
+
+.footer p {
+
+    font-size: 25px;
+    /* text-align: center; */
+    /* color: rgb(28, 149, 219); */
+    color: rgb(17, 84, 122);
+    max-width: 500px;
+    margin: auto;
+    
+    
+}
 /* .div2 {
     background-repeat: no-repeat;
     background-attachment: fixed;
