@@ -117,7 +117,7 @@ header {
     height: 100%;
     display: grid;
     grid-template-columns: 10% 1fr 10%;
-    grid-template-rows: 1000px 600px 600px;
+    grid-template-rows: 950px 700px 600px;
     grid-row-gap: 20px;
     position: relative;
 }
@@ -150,6 +150,7 @@ header {
 .profilecard {
     margin: auto;
     transition: 0.3s ease-in-out;
+    
 }
 
 .profilecard p {
@@ -157,15 +158,19 @@ header {
     text-align: center;
     color: rgb(28, 149, 219);
     max-width: 500px;
+    
+
     margin: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
+
+     position: absolute; 
+     top: 0;
+    left: 0; 
     right: 0;
     bottom: 0;
-    margin-top: 150px;
+    margin-top: 270px;
     padding-left: 20px;
     padding-right: 20px;
+    
 }
 
 .profilecard img {
@@ -196,7 +201,17 @@ header {
 
 
 /* DIV 1 */
-
+.div1::before {
+    content:"PROJECTS";
+    margin: 10px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 100px;
+    color: rgb(28, 149, 219);
+    height: 100px;
+    width: 700px;
+    
+}
 .div1 {
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -342,3 +357,20 @@ header {
     border-bottom: 1px solid black;
 }
 
+/* animation line */
+@-webkit-keyframes glow {
+    to {
+         border-bottom-color: rgb(255, 255, 255);
+        
+     
+    }
+}
+
+.profile h1 {
+    border-bottom: 1px solid transparent;
+    -webkit-animation: glow 2.0s infinite alternate;  
+     -webkit-transition: border 1.0s linear, box-shadow 1.0s linear;
+       -moz-transition: border 1.0s linear, box-shadow 1.0s linear;
+            transition: border 1.0s linear, box-shadow 1.0s linear;
+  
+}
