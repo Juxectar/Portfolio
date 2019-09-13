@@ -15,8 +15,11 @@ html {
     background-position: center;
     background-size: cover;
     scroll-behavior: smooth;
+    
 }
-
+html::-webkit-scrollbar{
+    display:none;
+}
 #body {
     background-image: url("img/snow.gif");
     background-attachment: fixed;
@@ -370,9 +373,9 @@ header {
 
 .profile h1 {
     border-bottom: 1px solid transparent;
-    -webkit-animation: glow 2.0s infinite alternate;  
-     -webkit-transition: border 1.0s linear, box-shadow 1.0s linear;
-       -moz-transition: border 1.0s linear, box-shadow 1.0s linear;
-            transition: border 1.0s linear, box-shadow 1.0s linear;
+    -webkit-animation: glow 2s infinite alternate;  
+     -webkit-transition: border 2s linear, box-shadow 1.0s linear;
+       -moz-transition: border 2s linear, box-shadow 1.0s linear;
+            transition: border 2s linear, box-shadow 1.0s linear;
   
 }
