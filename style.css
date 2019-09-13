@@ -3,8 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Iceland;
-    
-    
 }
 
 html {
@@ -15,11 +13,12 @@ html {
     background-position: center;
     background-size: cover;
     scroll-behavior: smooth;
-    
 }
-html::-webkit-scrollbar{
-    display:none;
+
+html::-webkit-scrollbar {
+    display: none;
 }
+
 #body {
     background-image: url("img/snow.gif");
     background-attachment: fixed;
@@ -140,7 +139,6 @@ header {
     padding: 5px;
     position: relative;
     overflow: hidden;
-    
 }
 
 .profile h1 {
@@ -155,7 +153,6 @@ header {
 .profilecard {
     margin: auto;
     transition: 0.3s ease-in-out;
-    
 }
 
 .profilecard p {
@@ -163,19 +160,15 @@ header {
     text-align: center;
     color: rgb(28, 149, 219);
     max-width: 500px;
-    
-
     margin: auto;
-
-     position: absolute; 
-     top: 0;
-    left: 0; 
+    position: absolute;
+    top: 0;
+    left: 0;
     right: 0;
     bottom: 0;
     margin-top: 270px;
     padding-left: 20px;
     padding-right: 20px;
-    
 }
 
 .profilecard img {
@@ -196,18 +189,18 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(rgb(67, 69, 85), rgb(7, 14, 44));
+    /* background: radial-gradient(rgb(67, 69, 85), rgb(7, 14, 44)); */
+    background: radial-gradient(rgba(67, 69, 85, 0.836), rgb(7, 14, 44));
     /* background: radial-gradient(ellipse farthest-corner at center top , #1ccea6,#2f61e2); */
     filter: blur(5px);
     opacity: 0.95;
     z-index: 0;
 }
 
-
-
 /* DIV 1 */
+
 .div1::before {
-    content:"PROJECTS";
+    content: "PROJECTS";
     margin: 10px;
     text-align: center;
     letter-spacing: 2px;
@@ -215,8 +208,8 @@ header {
     color: rgb(28, 149, 219);
     height: 100px;
     width: 700px;
-    
 }
+
 .div1 {
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -236,7 +229,8 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(rgb(67, 69, 85), rgb(7, 14, 44));
+    /* background: radial-gradient(rgb(67, 69, 85), rgb(7, 14, 44)); */
+    background: radial-gradient(rgba(67, 69, 85, 0.836), rgb(7, 14, 44));
     filter: blur(5px);
     opacity: 0.95;
     z-index: 0;
@@ -329,6 +323,7 @@ header {
     background-image: url("img/snowfooter.png");
     background-size: cover;
     padding-bottom: 450px;
+    min-width: 800px;
 }
 
 .footer {
@@ -363,19 +358,18 @@ header {
 }
 
 /* animation line */
+
 @-webkit-keyframes glow {
     to {
-         border-bottom-color: rgb(255, 255, 255);
-        
-     
+        border-bottom-color: rgb(255, 255, 255);
     }
 }
 
 .profile h1 {
     border-bottom: 1px solid transparent;
-    -webkit-animation: glow 2s infinite alternate;  
-     -webkit-transition: border 2s linear, box-shadow 1.0s linear;
-       -moz-transition: border 2s linear, box-shadow 1.0s linear;
-            transition: border 2s linear, box-shadow 1.0s linear;
-  
+    -webkit-animation: glow 2s infinite alternate;
+    -webkit-transition: border 2s linear, box-shadow 1.0s linear;
+    -moz-transition: border 2s linear, box-shadow 1.0s linear;
+    transition: border 2s linear, box-shadow 1.0s linear;
 }
+
