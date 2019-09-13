@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: Iceland;
     
+    
 }
 
 html {
@@ -13,6 +14,7 @@ html {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    scroll-behavior: smooth;
 }
 
 #body {
