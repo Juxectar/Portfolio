@@ -123,7 +123,7 @@ header {
     height: 100%;
     display: grid;
     grid-template-columns: 10% 1fr 10%;
-    grid-template-rows: 95vh 700px 600px 70vh;
+    grid-template-rows: 95vh 700px 600px 60vh;
     grid-row-gap: 20px;
     position: relative;
 }
