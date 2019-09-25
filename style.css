@@ -19,7 +19,7 @@ html {
     display: none;
 } */
 
-#body {
+body {
     background-image: url("img/snow.gif");
     background-attachment: fixed;
     background-position: center;
@@ -267,34 +267,29 @@ header {
     border-radius: 5px;
 }
 
+/* PROFILE */
+
+.div0, .div0background {
+    grid-area: 1/2;
+}
+
 /* DIV 1 */
 
-.div1 {
-    grid-area: 2/2;
-}
-
-.div1background {
+.div1, .div1background {
     grid-area: 2/2;
 }
 
 /* div2 */
 
-.div2 {
-    grid-area: 3/2;
-}
-
-.div2background {
+.div2, .div2background {
     grid-area: 3/2;
 }
 
 /* div2 */
-.div3 {
-    grid-area: 4/2;
-}
-.div3background {
-    grid-area: 4/2;
-}
 
+.div3, .div3background {
+    grid-area: 4/2;
+}
 
 /* end of projects */
 
@@ -384,7 +379,7 @@ header {
     border-bottom: 1px solid black;
 }
 
-/* animation line */
+/* animation of the underline name */
 
 @-webkit-keyframes glow {
     to {
