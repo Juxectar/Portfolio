@@ -123,7 +123,7 @@ header {
     height: 100%;
     display: grid;
     grid-template-columns: 10% 1fr 10%;
-    grid-template-rows: minmax(700px, 95vh) 700px 600px 600px;
+    grid-template-rows: minmax(700px, 95vh) 700px 600px 600px 600px;
     grid-row-gap: 20px;
     position: relative;
 }
@@ -287,6 +287,13 @@ header {
     grid-area: 3/2;
 }
 
+/* div2 */
+.div3 {
+    grid-area: 4/2;
+}
+.div3background {
+    grid-area: 4/2;
+}
 
 
 /* end of projects */
