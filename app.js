@@ -2,7 +2,7 @@ const fullsnow = document.getElementById("fullsnow");
 const backsnow = document.getElementById("backsnow");
 const nosnow = document.getElementById("nosnow");
 
-const allBackgrounds = document.getElementsByClassName("projectbackground");
+const allBackgrounds = document.getElementsByClassName("snow");
 
 
 
