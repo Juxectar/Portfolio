@@ -123,7 +123,7 @@ header {
     height: 100%;
     display: grid;
     grid-template-columns: 10% 1fr 10%;
-    grid-template-rows: minmax(700px, 95vh) 700px 600px 600px 600px;
+    grid-template-rows: minmax(700px, 95vh) 700px 600px 600px 600px 600px;
     grid-row-gap: 20px;
     position: relative;
 }
@@ -251,7 +251,7 @@ header {
 .paragraphdiv {
     padding: 20px;
     width: 70%;
-    max-width: 500px;
+    max-width: 700px;
 }
 
 .paragraphdiv p {
@@ -285,12 +285,17 @@ header {
     grid-area: 3/2;
 }
 
-/* div2 */
+/* div3 */
 
 .div3, .div3background {
     grid-area: 4/2;
 }
 
+/* div4 */
+
+.div4, .div4background {
+    grid-area: 5/2; 
+}
 /* end of projects */
 
 .github, .live {
@@ -310,27 +315,30 @@ header {
 }
 
 .github {
-    background: radial-gradient(rgb(81, 170, 177), rgb(2, 35, 39));
+    /* background: radial-gradient(rgb(81, 170, 177), rgb(2, 35, 39)); */
+    background:  #24292e;
 }
 
 .live {
     margin: 5px 0 5px 0;
-    background: radial-gradient(rgb(68, 189, 64), rgb(2, 35, 39));
+    background: rgb(165, 68, 68);
+    /* background: radial-gradient(rgb(68, 189, 64), rgb(2, 35, 39)); */
 }
 
 .github:hover, .live:hover {
-    letter-spacing: 3px;
-    box-shadow: 0 0 5px rgb(28, 149, 219);
-    border: 1px solid rgb(28, 149, 219);
-    color: rgb(4, 27, 41);
+    letter-spacing: 2px;
+    box-shadow: 0 0 3px rgb(255, 255, 255);
+    
 }
 
 .github:hover {
-    background-color: rgb(143, 197, 17);
+    background: #081b30;
+    /* background-color: rgb(143, 197, 17); */
 }
 
 .live:hover {
-    background-color: rgb(233, 113, 33);
+    background: rgb(190, 14, 14);
+    /* background-color: rgb(233, 113, 33); */
 }
 
 .footerbackground {
